@@ -8,11 +8,12 @@ $translation: 3px;
   border-width: 1px;
   border-color: global.$brand-primary;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 12px 16px;
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   cursor: pointer;
   display: inline-block;
   background-color: global.$background-color;
+  max-width: max-content;
 
   &:hover {
     transform: translate(-$translation, -$translation);
