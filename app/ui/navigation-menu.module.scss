@@ -1,0 +1,72 @@
+@use "app/pages/AllVariables.global" as global;
+
+
+
+%closeButtonLine {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width:100%;
+  //transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1) 0.5s;
+}
+
+.link {
+  &:hover {
+    color: global.$brand-primary;
+  }
+}
+.number {
+  color: global.$brand-primary
+}
+
+
+.mobileHamburgerLine {
+  position: absolute;
+  width: 100%;
+  top:50%;
+  transform: rotate(0deg);
+
+  &:before {
+    width: 120%;
+    content: "";
+    position: absolute;
+    transition: transform 0.25s ease-in, top 0.25s ease-in, opacity 0.25s ease-in;
+  }
+  &:after {
+    width: 80%;
+    left: 20%;
+    content: "";
+    position: absolute;
+    transition: transform 0.25s ease-in, top 0.25s ease-in, opacity 0.25s ease-in;
+  }
+}
+
+.mobileCloseButton {
+  @extend %closeButtonLine;
+  &:before {
+    @extend %closeButtonLine;
+    background-color: purple;
+    //animation: rotateCloseButtonCW 0.5s ease-in-out forwards;
+  }
+  animation: rotateCloseButtonCW 0.5s ease-in-out forwards;
+}
+
+// TODO: do I really need to do this animation? I think it's pretty hard, and honestly a hard transition is fine.
+@keyframes rotateCloseButtonCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateCloseButtonCCW {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}

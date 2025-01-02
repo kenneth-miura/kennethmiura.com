@@ -1,0 +1,37 @@
+@use "app/pages/AllVariables.global" as global;
+
+$barHeight: 2px;
+$line-transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+.mobileHamburgerContainer {
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+
+%line {
+  background-color: global.$brand-primary;
+  height: $barHeight;
+}
+
+%hamburgerLine {
+  @extend %line;
+  right: 0;
+  position: absolute;
+  transition: $line-transition;
+}
+
+
+.mobileHamburgerLineTop {
+  @extend %hamburgerLine;
+  width: 100%;
+
+}
+
+.mobileHamburgerLineMiddle {
+  @extend %hamburgerLine;
+}
+
+.mobileHamburgerLineBottom {
+  @extend %hamburgerLine;
+}

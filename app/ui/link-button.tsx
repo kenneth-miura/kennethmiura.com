@@ -8,9 +8,8 @@ interface LinkButtonProps {
 export default function LinkButton(props: LinkButtonProps) {
     const {targetUrl, text} = props;
     return (
-
             <a
-                className={clsx([styles.linkButton, highlightFont.className])}
+                className={clsx([styles.linkButton, highlightFont.className, "text-xs"])}
                 href={targetUrl}
             >
                 {text}
