@@ -4,18 +4,20 @@ import LinkButton from "@/app/ui/link-button";
 import styles from './navigation-menu.module.scss';
 import {clsx} from "clsx";
 import NavigationMenuMobileButton from "@/app/ui/navigation-menu-mobile-button";
+import NavigationSidebar from "@/app/ui/navigation-sidebar";
+import {firaCode} from "@/app/ui/fonts";
 
-interface LinkData {
+export interface NavigationLinkData {
     href: string;
     text: string;
 }
 
 export default function NavigationMenu() {
 
-    const [open, setOpen] = React.useState(false);
-    const toggleOpen = React.useCallback(() => setOpen(prevOpen => !prevOpen), [open]);
+    const [menuOpen, setMenuOpen] = React.useState(false);
+    const toggleMenuOpen = React.useCallback(() => setMenuOpen(prevOpen => !prevOpen), [menuOpen]);
 
-    const data: LinkData[] = [{
+    const data: NavigationLinkData[] = [{
         href: "/#about",
         text: "About"
     }, {
@@ -38,8 +40,8 @@ export default function NavigationMenu() {
                     return (
                         <li key={linkData.text} className={clsx([styles.link, "mr-4 text-sm"])}>
                             <Link href={linkData.href}>
-                                <span className={clsx([styles.number, "mr-1"])}>{number}</span>
-                                {linkData.text}
+                                <span className={clsx([styles.number, firaCode.className, "mr-1"])}>{number}</span>
+                                <span>{linkData.text}</span>
                             </Link>
                         </li>
                     )
@@ -56,24 +58,9 @@ export default function NavigationMenu() {
 
     const mobile =
         <>
-            <NavigationMenuMobileButton menuOpen={open} toggleMenuOpen={toggleOpen}/>
-            {false && (
-                <ol className="flex flex-row items-center">
-                    {
-                        data.map((linkData, i) => {
-                            const number = `0${i + 1}.`
-                            return (
-                                    <li key={linkData.text} className={clsx([styles.link, "mr-4 text-sm"])}>
-                                        <Link href={linkData.href}>
-                                            <span className={clsx([styles.number, "mr-1"])}>{number}</span>
-                                            {linkData.text}
-                                        </Link>
-                                    </li>
-                                )
-                            })
-                        }
-                        <LinkButton targetUrl={"/resume.pdf"} text="Resume"/>
-                    </ol>
+            <NavigationMenuMobileButton menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
+            {menuOpen && (
+                <NavigationSidebar data={data}/>
                 )
                 }
             </>;

@@ -1,4 +1,9 @@
 import "./AllVariables.global.scss";
-export default function App({ Component, pageProps }) {
-    return <Component {...pageProps} />;
+import {inter} from "../ui/fonts";
+
+export default function App({Component, pageProps}) {
+    return(<div class={inter.variable}>
+        <Component {...pageProps} />;
+
+    </div>);
 }

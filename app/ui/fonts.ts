@@ -1,4 +1,4 @@
 import { Fira_Code, Inter } from 'next/font/google';
 
-export const highlightFont = Fira_Code({subsets:['latin']});
-export const bodyFont = Inter({subsets: ['latin']});
+export const firaCode = Fira_Code({subsets:['latin'], variable: '--fira-code-default'});
+export const inter = Inter({subsets: ['latin'], variable: '--inter-default'});

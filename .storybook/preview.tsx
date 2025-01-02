@@ -2,6 +2,8 @@ import type { Preview } from "@storybook/react";
 import '../app/globals.scss';
 
 const preview: Preview = {
+  decorators: [ (Story) => (<div><Story/></div>)
+  ],
   parameters: {
     backgrounds: {
       values: [{

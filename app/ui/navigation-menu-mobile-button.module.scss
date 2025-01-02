@@ -2,9 +2,13 @@
 
 $barHeight: 2px;
 $line-transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+$button-position: 30px;
 
 .mobileHamburgerContainer {
-  position: relative;
+  position: absolute;
+  right: $button-position;
+  top: $button-position;
+  z-index: 2;
   width: 30px;
   height: 24px;
 }

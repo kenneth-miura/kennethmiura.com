@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import {bodyFont} from "@/app/ui/fonts";
+import {inter, firaCode} from "@/app/ui/fonts";
 
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bodyFont.className} antialiased`}
+        className={`font-inter ${inter.variable} ${firaCode.variable}  antialiased`}
       >
         {children}
       </body>
