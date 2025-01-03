@@ -1,0 +1,36 @@
+@use "app/pages/AllVariables.global" as global;
+$navbar-height: 100px;
+$scrolling-navbar-height: 70px;
+
+.header {
+  position:fixed;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  //transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+@mixin scrollingHeader {
+  height: $scrolling-navbar-height;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 10px 30px -15px rgba(2,12,27,0.7);
+  background-color: rgba(10, 25, 47, 0.85);
+}
+
+.headerAtTop {
+  height: $navbar-height;
+  backdrop-filter: none;
+}
+
+.headerScrollingUp {
+  @include scrollingHeader;
+  transform: translateY(0);
+}
+.headerScrollingDown {
+  @include scrollingHeader;
+  transform: translateY(calc(-1 * $navbar-height));
+}
