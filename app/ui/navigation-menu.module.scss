@@ -1,14 +1,12 @@
 @use "app/pages/AllVariables.global" as global;
 
 
-
 %closeButtonLine {
   content: "";
   position: absolute;
   top: 50%;
   left: 25%;
-  width:100%;
-  //transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1) 0.5s;
+  width: 100%;
 }
 
 .link {
@@ -16,7 +14,8 @@
     color: global.$brand-primary;
   }
 }
+
 .number {
-  color: global.$brand-primary
+  color: global.$brand-primary;
 }
 

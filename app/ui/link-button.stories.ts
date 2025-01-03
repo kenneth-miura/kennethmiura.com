@@ -13,6 +13,12 @@ export default meta;
 
 type Story = StoryObj<typeof LinkButton>
 
-export const Example: Story = {
+export const Default: Story = {
+}
 
+export const LargeButton: Story =  {
+    args: {
+        size: 'large'
+
+    }
 }

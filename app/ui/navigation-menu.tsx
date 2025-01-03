@@ -7,15 +7,22 @@ import NavigationMenuMobileButton from "@/app/ui/navigation-menu-mobile-button";
 import NavigationSidebar from "@/app/ui/navigation-sidebar";
 import {firaCode} from "@/app/ui/fonts";
 
+// TODO: if this setOpen stuff feels universally needed, alter to a universal provider
+export interface NavigationMenuProps {
+    menuOpen: boolean;
+    toggleMenuOpen: () => void;
+}
+
 export interface NavigationLinkData {
     href: string;
     text: string;
+
 }
 
-export default function NavigationMenu() {
+export default function NavigationMenu(props: NavigationMenuProps) {
+    // TODO: when menuOpen and in mobile, blur the background
 
-    const [menuOpen, setMenuOpen] = React.useState(false);
-    const toggleMenuOpen = React.useCallback(() => setMenuOpen(prevOpen => !prevOpen), [menuOpen]);
+    const {menuOpen, toggleMenuOpen} = props;
 
     const data: NavigationLinkData[] = [{
         href: "/#about",
@@ -53,17 +60,14 @@ export default function NavigationMenu() {
     );
 
 
-
-
-
     const mobile =
         <>
             <NavigationMenuMobileButton menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
             {menuOpen && (
                 <NavigationSidebar data={data}/>
-                )
-                }
-            </>;
+            )
+            }
+        </>;
 
     return (<>
             <div className="hidden md:block">

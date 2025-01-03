@@ -1,8 +1,8 @@
 @use "app/pages/AllVariables.global" as global;
+@use "app/ui/navigation-menu.module" as desktopMenu;
 
 $side-padding: 15px;
 
-// TODO: this should swallow
 .sidebar {
   display: flex;
   padding-right: $side-padding;
@@ -10,7 +10,7 @@ $side-padding: 15px;
   position: fixed;
   top: 0;
   right:0;
-  width: 250px;
+  width: min(75vw, 400px);
   height: 100%;
   background-color: global.$light-background-color;
   box-shadow: -10px 0 30px -15px rgba(2,12,27,0.7);
@@ -18,6 +18,3 @@ $side-padding: 15px;
   transition: transform 0.3s ease;
 }
 
-.number {
-  color: global.$brand-primary
-}
