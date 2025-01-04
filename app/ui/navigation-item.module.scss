@@ -1,0 +1,13 @@
+@use "app/pages/AllVariables.global" as global;
+
+
+.link {
+  &:hover {
+    color: global.$brand-primary;
+  }
+}
+
+.number {
+  color: global.$brand-primary;
+}
+
