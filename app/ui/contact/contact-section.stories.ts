@@ -2,7 +2,10 @@ import {Meta, StoryObj} from "@storybook/react";
 import ContactSection from "@/app/ui/contact/contact-section";
 
 const meta = {
-    component: ContactSection
+    component: ContactSection,
+    args: {
+        index: 3
+    }
 } satisfies Meta<typeof ContactSection>
 
 export default meta;

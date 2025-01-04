@@ -1,7 +1,7 @@
 export type Section = 'about' | 'experience' | 'projects' | 'contact';
 
 export interface SharedSectionProps {
-    section: Section;
+    index: number;
 }
 
 export const sectionsToMetadata: Record<Section, SectionMetadata> = {

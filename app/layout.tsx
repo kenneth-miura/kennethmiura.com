@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-inter ${inter.variable} ${firaCode.variable}  antialiased`}
+        className={`font-inter ${inter.variable} ${firaCode.variable}  antialiased scroll-smooth`}
       >
         {children}
       </body>
