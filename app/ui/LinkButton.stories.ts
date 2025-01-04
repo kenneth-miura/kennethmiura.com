@@ -1,4 +1,4 @@
-import LinkButton from "@/app/ui/link-button";
+import LinkButton from "@/app/ui/LinkButton";
 import {Meta, StoryObj} from "@storybook/react";
 
 const meta = {

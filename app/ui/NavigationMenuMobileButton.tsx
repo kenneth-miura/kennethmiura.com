@@ -1,4 +1,4 @@
-import styles from './navigation-menu-mobile-button.module.scss';
+import styles from './NavigationMenuMobileButton.module.scss';
 import {clsx} from "clsx";
 
 interface NavigationMenuMobileButtonProps {

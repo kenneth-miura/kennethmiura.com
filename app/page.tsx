@@ -1,5 +1,5 @@
 'use client';
-import ContactSection from "@/app/ui/contact/contact-section";
+import ContactSection from "@/app/ui/contact/ContactSection";
 import {useState} from "react";
 import {clsx} from "clsx";
 import dynamic from "next/dynamic";
@@ -10,7 +10,7 @@ import ProjectsSection from "@/app/ui/projects/ProjectsSection";
 const DynamicHeaderWithNoSSR = dynamic(
     // No need for a loading skeleton because the header isn't fetching any data so it should render quickly. Also,
     // it is fixed so it shouldn't shift the page around (for SEO purposes)
-    () => import('@/app/ui/header'),
+    () => import('@/app/ui/Header'),
     { ssr: false }
 )
 

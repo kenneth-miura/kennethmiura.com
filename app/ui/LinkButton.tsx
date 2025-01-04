@@ -1,4 +1,4 @@
-import styles from './link-button.module.scss';
+import styles from './LinkButton.module.scss';
 import {clsx} from "clsx";
 import {firaCode} from "@/app/ui/fonts";
 interface LinkButtonProps {

@@ -1,5 +1,5 @@
 import {Meta, StoryObj} from "@storybook/react";
-import ContactSection from "@/app/ui/contact/contact-section";
+import ContactSection from "@/app/ui/contact/ContactSection";
 
 const meta = {
     component: ContactSection,

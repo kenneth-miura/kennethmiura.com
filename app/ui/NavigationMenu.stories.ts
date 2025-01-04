@@ -1,4 +1,4 @@
-import NavigationMenu from "@/app/ui/navigation-menu";
+import NavigationMenu from "@/app/ui/NavigationMenu";
 import {Meta, StoryObj} from "@storybook/react";
 
 const meta = {

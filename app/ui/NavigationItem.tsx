@@ -1,5 +1,5 @@
 import {clsx} from "clsx";
-import styles from "@/app/ui/navigation-item.module.scss";
+import styles from "@/app/ui/NavigationItem.module.scss";
 import Link from "next/link";
 import {firaCode} from "@/app/ui/fonts";
 import React from "react";

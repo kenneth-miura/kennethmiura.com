@@ -1,4 +1,4 @@
-import Header from "@/app/ui/header";
+import Header from "@/app/ui/Header";
 import {Meta} from "@storybook/react";
 
 const meta = {

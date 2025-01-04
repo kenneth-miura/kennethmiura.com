@@ -1,5 +1,5 @@
 @use "app/pages/AllVariables.global" as global;
-@use "app/ui/navigation-item.module" as navigationItem;
+@use "NavigationItem.module" as navigationItem;
 
 .horizontalLine {
   margin-left: 16px;

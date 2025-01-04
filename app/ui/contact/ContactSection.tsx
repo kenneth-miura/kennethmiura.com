@@ -1,8 +1,8 @@
-import LinkButton from "@/app/ui/link-button";
+import LinkButton from "@/app/ui/LinkButton";
 import {clsx} from "clsx";
 import {firaCode} from "@/app/ui/fonts";
-import styles from './contact-section.module.scss';
-import SectionContainer from "@/app/ui/section-container";
+import styles from './ContactSection.module.scss';
+import SectionContainer from "@/app/ui/SectionContainer";
 import {sectionsToMetadata, SharedSectionProps} from "@/app/ui/sections";
 
 export default function ContactSection(props: SharedSectionProps) {

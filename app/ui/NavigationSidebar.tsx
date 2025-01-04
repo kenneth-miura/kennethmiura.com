@@ -1,8 +1,8 @@
-import styles from './navigation-sidebar.module.scss';
-import LinkButton from "@/app/ui/link-button";
+import styles from './NavigationSidebar.module.scss';
+import LinkButton from "@/app/ui/LinkButton";
 import React from "react";
 import {sectionsToMetadata} from "@/app/ui/sections";
-import NavigationItem from "@/app/ui/navigation-item";
+import NavigationItem from "@/app/ui/NavigationItem";
 
 
 export default function NavigationSidebar() {

@@ -1,9 +1,9 @@
 import React from "react";
-import LinkButton from "@/app/ui/link-button";
-import NavigationMenuMobileButton from "@/app/ui/navigation-menu-mobile-button";
-import NavigationSidebar from "@/app/ui/navigation-sidebar";
+import LinkButton from "@/app/ui/LinkButton";
+import NavigationMenuMobileButton from "@/app/ui/NavigationMenuMobileButton";
+import NavigationSidebar from "@/app/ui/NavigationSidebar";
 import {sectionsToMetadata} from "@/app/ui/sections";
-import NavigationItem from "@/app/ui/navigation-item";
+import NavigationItem from "@/app/ui/NavigationItem";
 
 // TODO: if this setOpen stuff feels universally needed, alter to a universal provider
 export interface NavigationMenuProps {

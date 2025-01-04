@@ -1,8 +1,8 @@
 import useIsNearTop from "@/app/hooks/useIsNearTop";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
 import {clsx} from "clsx";
-import styles from "./header.module.scss";
-import NavigationMenu from "@/app/ui/navigation-menu";
+import styles from "./Header.module.scss";
+import NavigationMenu from "@/app/ui/NavigationMenu";
 
 interface HeaderProps {
     menuOpen: boolean;
