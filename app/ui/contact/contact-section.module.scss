@@ -1,8 +1,8 @@
-@import "app/pages/AllVariables.global";
+@use "app/pages/AllVariables.global" as global;
 .headerText{
-  color: $brand-primary;
+  color: global.$brand-primary;
 }
 
 .ctaText {
-  color: $main-text;
+  color: global.$main-text;
 }
