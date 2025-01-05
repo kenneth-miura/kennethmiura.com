@@ -1,0 +1,16 @@
+@use "app/pages/AllVariables.global" as global;
+
+$vertical-margin: 20px;
+
+.heading {
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
+  font-weight: 600;
+  line-height: 1.1;
+  color: global.$main-text;
+  font-size: clamp(40px, 8vw, 70px);
+}
+
+.externalLink {
+  color: global.$brand-primary;
+}

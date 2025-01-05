@@ -1,6 +1,6 @@
 export default function SectionContainer({children}: {children: React.ReactNode}) {
-    return (<main className="flex flex-row justify-center py-24">
+    return (<div className="flex flex-col justify-center py-24 min-h-screen">
         {children}
-    </main>)
+    </div>)
 
 }

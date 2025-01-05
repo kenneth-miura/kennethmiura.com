@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import AboutSection from "@/app/ui/about/AboutSection";
 import ExperienceSection from "@/app/ui/experience/ExperienceSection";
 import ProjectsSection from "@/app/ui/projects/ProjectsSection";
+import IntroductionSection from "@/app/ui/intro/IntroductionSection";
 
 const DynamicHeaderWithNoSSR = dynamic(
     // No need for a loading skeleton because the header isn't fetching any data so it should render quickly. Also,
@@ -21,10 +22,11 @@ export default function Home() {
     return (
         <>
             <DynamicHeaderWithNoSSR menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
-            <div className={clsx("px-4 md:px-36 transition-all", {
+            <div className={clsx("px-4 md:px-36 py- transition-all", {
                 ['blur md:blur-none pointer-events-none md:pointer-events-auto ']: menuOpen
             })}
             >
+                <IntroductionSection/>
                 <AboutSection index={0}/>
                 <ExperienceSection index={1}/>
                 <ProjectsSection index={2}/>

@@ -13,7 +13,7 @@ interface NavigationItemProps {
 
 export default function NavigationItem(props: NavigationItemProps) {
     const {sectionMetadata, orientation, index} = props;
-    const {sectionTitle, scrollableId} = sectionMetadata;
+    const {navMenuTitle, scrollableId} = sectionMetadata;
     const number = `0${index + 1}.`
 
     const listElementStyles = React.useMemo(() => orientation == 'vertical' ?"mb-4 text-lg" : "mr-4 text-sm"  , [orientation]);
@@ -23,7 +23,7 @@ export default function NavigationItem(props: NavigationItemProps) {
         <li className={clsx([styles.link, listElementStyles])}>
             <Link href={'#' + scrollableId } className={linkStyles}>
                 <span className={clsx([styles.number, firaCode.className, numberStyles])}>{number}</span>
-                <span>{sectionTitle}</span>
+                <span>{navMenuTitle}</span>
             </Link>
         </li>
     )
