@@ -1,3 +1,43 @@
 @use "app/pages/AllVariables.global" as global;
 
+$defaultBorderOffset: 15px;
+$hoverTranslation: 3px;
+$transition: transform 0.3s ease;
+
+.container {
+  position: relative;
+  display: inline-block;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+
+    border-color: global.$brand-primary;
+    border-width: 1px;
+    transform: translate($defaultBorderOffset, $defaultBorderOffset);
+    transition: $transition;
+  }
+
+    &:hover:after {
+        transform: translate($defaultBorderOffset +  $hoverTranslation, $defaultBorderOffset+ $hoverTranslation);
+    }
+
+}
+
+.profileImage {
+  transition: $transition;
+
+
+  &:hover {
+    transform: translate(-$hoverTranslation, -$hoverTranslation);
+  }
+
+}
+
 
