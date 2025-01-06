@@ -1,0 +1,17 @@
+@use "app/pages/AllVariables.global" as global;
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  flex-wrap: wrap;
+  min-width: 500px;
+}
+
+.skillsBullet {
+  &:before {
+    content: "▹";
+    color: global.$brand-primary;
+    margin-right: 8px;
+  }
+}

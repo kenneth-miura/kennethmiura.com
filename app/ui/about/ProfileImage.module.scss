@@ -7,6 +7,9 @@ $transition: transform 0.3s ease;
 .container {
   position: relative;
   display: inline-block;
+  max-height: max-content;
+  max-width: max-content;
+  flex-shrink: 0;
 
   &:after {
     content: "";
