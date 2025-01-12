@@ -10,19 +10,19 @@ export default function AboutSection(props: SharedSectionProps) {
     const {index} = props;
     const skills = ['Typescript', 'Java', 'React', 'Express', 'MySQL', 'React Native'];
     return (<SectionContainer>
-        <div className="flex flex-col lg:flex-row px-10">
-            <div className="mr-5">
+        <div className="flex flex-col lg:flex-row">
+            <div className="mr-5 max-w-xl">
                 <SectionHeader section={'about'} index={index}/>
                 <div className='mt-5'>
                     <p> Hi! My name is Kenneth, and I like building software! I got started with software by doing
                         programming for FIRST robotics in highschool. After getting my start, I went to University of
                         Toronto to study Computer Science, and I&#39;ve since moved into fullstack work.</p>
                     <br/>
-                    <p> I&#39;ve worked at many different types of companies, from <a className={styles.highlightColor}
-                                                                                      href="https://thewaltdisneycompany.com/">a
-                        big consumer-facing company</a>,
-                        to a <a className={styles.highlightColor} href="https://wanderlog.com/">startup</a> and a <a
-                            className={styles.highlightColor} href="https://www.palantir.com/">big tech company</a>.
+                    <p> I&#39;ve worked at a wide spread of organizations, from a <a className={styles.highlightColor} href="https://wanderlog.com/">startup</a>, to <a
+                        className={styles.highlightColor} href="https://www.palantir.com/">big tech</a>, to <a
+                        className={styles.highlightColor}
+                        href="https://thewaltdisneycompany.com/">a
+                        big consumer-facing company</a>.
                     </p>
                     <br/>
                     <p> During my time at University of Toronto, I helped build an iOS menstruation tracking app
@@ -35,7 +35,7 @@ export default function AboutSection(props: SharedSectionProps) {
                     <p>Here&#39;s some technologies I like:</p>
                     <br/>
                     <ul className={styles.skillsContainer}>
-                        {skills.map(skill => <li className={clsx([styles.skillsBullet, firaCode.className, "text-sm"])}
+                        {skills.map(skill => <li className={clsx([styles.bullet, firaCode.className, "text-sm"])}
                                                  key={skill}>{skill}</li>)}
                     </ul>
 

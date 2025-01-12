@@ -10,5 +10,13 @@ $light-background-color: #112240;
   color: $brand-primary;
 }
 
+.bullet {
+  &:before {
+    content: "▹";
+    color: $brand-primary;
+    margin-right: 16px;
+  }
+}
+
 
 

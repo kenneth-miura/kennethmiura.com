@@ -1,0 +1,11 @@
+{
+  "startDate": "2022-05",
+  "endDate": "2022-08",
+  "company": "Disney",
+  "url": "https://thewaltdisneycompany.com/",
+  "experienceBullets": [
+    "Increased service stability and reduced manual testing overhead by spearheading integration testing initiative for three\nDisneyland reservation ticketing services using Spring Boot, Docker and MySQL",
+    "Optimized logging and increased security with custom logging and masking system for Spring Boot services"
+  ],
+  "title": "Software Engineering Intern"
+}

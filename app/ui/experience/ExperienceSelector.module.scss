@@ -1,0 +1,71 @@
+@use "app/pages/AllVariables.global" as global;
+
+$not-selected-color: #233554;
+$selected-color: global.$brand-primary;
+$border-thickness: 2px;
+
+// Keep in sync with corresponding variables in ExperienceSelector.tsx
+$desktop-button-height: 75px;
+$mobile-button-width: 125px;
+$mobile-button-height: 50px;
+
+@mixin focusedOrSelected {
+    color: global.$brand-primary;
+    background-color: #112240;
+}
+
+.companyDescriptionContainer {
+  // This so the description approximately lines up with the top word. Defined empirically
+  margin-top: calc($desktop-button-height / 4);
+}
+
+.selected {
+  @include focusedOrSelected;
+}
+
+.container {
+  position: relative;
+  min-height: 500px;
+}
+
+
+
+
+.companyButton {
+  width: $mobile-button-width;
+  height: $mobile-button-height;
+  border-left: none;
+  border-bottom: $border-thickness solid $not-selected-color;
+
+  &:hover, &:focus {
+    @include focusedOrSelected;
+  }
+}
+
+.selectedBar {
+  transition: all 0.4s ease;
+  position: absolute;
+  background-color: $selected-color;
+  width: $mobile-button-width;
+  height: $border-thickness;
+  top: calc($mobile-button-height - $border-thickness);
+}
+
+// Hack to enable using tailwind breakpoints within scss. See below for reference
+// https://stackoverflow.com/questions/77788446/tailwind-screen-function-break-the-sass-compiler
+@media (min-width: theme('screens.md')) {
+  .selectedBar {
+    height: $desktop-button-height;
+    width: $border-thickness;
+  }
+
+  .companyButton {
+    min-width: 120px;
+    height: $desktop-button-height;
+    border-left: $border-thickness solid $not-selected-color;
+    border-bottom: none;
+  }
+
+  .container {
+  }
+}

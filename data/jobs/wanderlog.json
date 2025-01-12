@@ -1,0 +1,14 @@
+{
+  "startDate": "2023-05",
+  "endDate": "2024-05",
+  "company": "Wanderlog",
+  "url": "https://wanderlog.com/",
+  "experienceBullets": [
+    "Reduced update run time by 7% and ensured content freshness by automating data pipeline to generate top 50\ndestination pages by finding relevant webpages and parsing them, using LLMs, Node.js, Redis and Puppeteer",
+    "Increased retention by 5% by launching LLM-powered mobile trip plan assistant using React Native",
+    "Doubled number of booking options by integrating Airbnb into hotel booking service using React and Express",
+    "Increased user acquisition by 3% by overhauling existing destination pages for improved SEO indexing",
+    "Elevated subscription rate by 3% by creating novel mobile subscription flow with React Native"
+  ],
+  "title": "Software Engineering Intern"
+}

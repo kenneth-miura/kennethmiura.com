@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <>
             <DynamicHeaderWithNoSSR menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
-            <div className={clsx("px-4 md:px-36 py- transition-all", {
+            <div className={clsx("px-4 md:px-36 py- transition-all flex flex-col items-center", {
                 ['blur md:blur-none pointer-events-none md:pointer-events-auto ']: menuOpen
             })}
             >

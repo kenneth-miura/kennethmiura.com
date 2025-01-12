@@ -2,7 +2,11 @@
   "startDate": "2024-05",
   "endDate": "2024-08",
   "company": "Palantir",
-  "location": "New York, NY",
   "url": "https://www.palantir.com/",
-  "experienceBullets": []
+  "experienceBullets": [
+    "Reduced incident response time for mission-critical client processes by 50% by designing and implementing automatic\ningestion for REST request execution data into Palantir’s analytics platform with React, GraphQL, and Java",
+    "Conducted user interviews with five key clients to identify pain points with monitoring flows for no-code REST requests",
+    "Decreased false-flag monitor-based paging by 30% by analyzing historical error data and implementing a new heuristic"
+  ],
+  "title": "Software Engineering Intern"
 }

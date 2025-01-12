@@ -7,11 +7,3 @@
   flex-wrap: wrap;
   min-width: 500px;
 }
-
-.skillsBullet {
-  &:before {
-    content: "▹";
-    color: global.$brand-primary;
-    margin-right: 8px;
-  }
-}
