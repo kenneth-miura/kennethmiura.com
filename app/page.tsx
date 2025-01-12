@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import ContactSection from "@/app/ui/contact/ContactSection";
 import {useState} from "react";
 import {clsx} from "clsx";

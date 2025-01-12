@@ -10,7 +10,7 @@ export default function AboutSection(props: SharedSectionProps) {
     const {index} = props;
     const skills = ['Typescript', 'Java', 'React', 'Express', 'MySQL', 'React Native'];
     return (<SectionContainer>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row w-full items-center">
             <div className="mr-5 max-w-xl">
                 <SectionHeader section={'about'} index={index}/>
                 <div className='mt-5'>

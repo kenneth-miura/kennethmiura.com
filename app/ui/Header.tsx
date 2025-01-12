@@ -1,3 +1,4 @@
+'use client'
 import useIsNearTop from "@/app/hooks/useIsNearTop";
 import useScrollDirection from "@/app/hooks/useScrollDirection";
 import {clsx} from "clsx";

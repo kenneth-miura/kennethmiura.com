@@ -19,7 +19,7 @@ export default function ContactSection(props: SharedSectionProps) {
         Although I&#39;m not currently looking for any new opportunities, my inbox is always open. Whether you have a question, or just want to say hi, I&#39;ll try my best to get back to you!
 
         </span>
-                    <LinkButton targetUrl="mailto:kenneth.t.miura@gmail.com" text="Say Hello"/>
+                    <LinkButton targetUrl="mailto:kenneth.t.miura@gmail.com" text="Say Hello" size='large'/>
                 </div>
             </>
 

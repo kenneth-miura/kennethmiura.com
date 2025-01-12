@@ -13,7 +13,7 @@ export default function SectionHeader(props: SectionHeaderProps) {
     const {sectionTitle, scrollableId} = sectionsToMetadata[section];
     const number = `0${index + 1}.`
     return (
-        <div className="flex items-center ">
+        <div className="flex items-center">
             <h2 id={scrollableId} className={clsx([styles.number, firaCode.className, 'mr-1  sm:text-lg md:text-xl'])}>{number}</h2>
             <h2 className="sm:text-xl md:text-2xl font-bold">{sectionTitle}</h2>
             <div className={styles.horizontalLine}/>

@@ -13,7 +13,7 @@ export const sectionsToMetadata: Record<Section, SectionMetadata> = {
     ['experience']: {
         navMenuTitle: 'Experience',
         scrollableId: 'experience',
-        sectionTitle: 'Professional Experience'
+        sectionTitle: "Where I've worked"
     },
     ['projects']: {
         navMenuTitle: 'Projects',
