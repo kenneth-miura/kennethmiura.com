@@ -7,6 +7,7 @@ import AboutSection from "@/app/ui/about/AboutSection";
 import ExperienceSection from "@/app/ui/experience/ExperienceSection";
 import ProjectsSection from "@/app/ui/projects/ProjectsSection";
 import IntroductionSection from "@/app/ui/intro/IntroductionSection";
+import SocialLinks from "@/app/ui/SocialLinks";
 
 const DynamicHeaderWithNoSSR = dynamic(
     // No need for a loading skeleton because the header isn't fetching any data so it should render quickly. Also,
@@ -31,6 +32,7 @@ export default function Home() {
                 <ExperienceSection index={1}/>
                 <ProjectsSection index={2}/>
                 <ContactSection index={3}/>
+                <SocialLinks/>
 
             </div>
         </>

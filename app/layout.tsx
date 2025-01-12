@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import {inter, firaCode} from "@/app/ui/fonts";
 
+import {config} from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
