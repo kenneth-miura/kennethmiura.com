@@ -7,13 +7,15 @@ import AboutSection from "@/app/ui/about/AboutSection";
 import ExperienceSection from "@/app/ui/experience/ExperienceSection";
 import ProjectsSection from "@/app/ui/projects/ProjectsSection";
 import IntroductionSection from "@/app/ui/intro/IntroductionSection";
-import SocialLinks from "@/app/ui/SocialLinks";
+import VerticalSocialLinks from "@/app/ui/socialLinks/VerticalSocialLinks";
+import Footer from "@/app/ui/Footer";
+import EmailLink from "@/app/ui/socialLinks/EmailLink";
 
 const DynamicHeaderWithNoSSR = dynamic(
     // No need for a loading skeleton because the header isn't fetching any data so it should render quickly. Also,
     // it is fixed so it shouldn't shift the page around (for SEO purposes)
     () => import('@/app/ui/Header'),
-    { ssr: false }
+    {ssr: false}
 )
 
 export default function Home() {
@@ -32,7 +34,9 @@ export default function Home() {
                 <ExperienceSection index={1}/>
                 <ProjectsSection index={2}/>
                 <ContactSection index={3}/>
-                <SocialLinks/>
+                <Footer/>
+                <VerticalSocialLinks/>
+                <EmailLink/>
 
             </div>
         </>

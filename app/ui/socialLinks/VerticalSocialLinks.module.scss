@@ -1,0 +1,11 @@
+@use "../../pages/AllVariables.global" as global;
+
+.leftSidebarContainer {
+  flex-direction: column;
+  position: fixed;
+  left: global.$sidebar-distance;
+  bottom: 0;
+  align-items: center;
+}
+
+
