@@ -12,6 +12,23 @@ $sidebar-distance: 40px;
   color: $brand-primary;
 }
 
+a.highlightColor {
+  display: inline flex;
+  flex-direction: column;
+  &:after {
+    transition: width 0.4s ease;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: $brand-primary;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+
+
 .bullet {
   &:before {
     content: "▹";
