@@ -1,0 +1,20 @@
+{
+  "title": "Personal Website",
+  "description": [
+    "Website for showcasing my work and projects. I built this based on",
+    {
+      "text": "this website",
+      "url": "https://v4.brittanychiang.com/"
+    },
+    "by Brittany Chiang as a way to try Next.js and Tailwind."
+  ],
+  "url": "https://kennethmiura-com.vercel.app/",
+  "githubUrl": "https://github.com/kenneth-miura/kennethmiura.com",
+  "techStack": [
+    "Next.js",
+    "Tailwind CSS",
+    "React"
+  ],
+  "imagePath": "/projects/website.png",
+  "altImageText": "A screenshot of a portfolio website"
+}

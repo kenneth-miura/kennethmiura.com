@@ -1,0 +1,34 @@
+@use "app/pages/AllVariables.global" as global;
+
+$description-padding: 20px;
+$description-margin: 20px;
+$description-offset: 50%;
+
+.image {
+
+  transition: filter 0.3s ease-in;
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.projectDescription {
+  width: calc(100% + $description-offset);
+  position: relative;
+  z-index: 1;
+  margin-top: $description-margin;
+  margin-bottom: $description-margin;
+  padding: $description-padding;
+  left: calc(-1 * $description-offset);
+  background-color: global.$light-background-color;
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+.tags {
+  position: relative;
+  display: flex;
+  width: calc(100% + ($description-offset - 20px));
+  left: calc(-1 * ($description-offset - 20px));
+  justify-content: end;
+}
