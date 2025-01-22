@@ -1,0 +1,11 @@
+{
+  "title": "The Period Purse",
+  "description": [
+    "Menstruation Tracking and education app that I worked on for a local non-profit as part of U of T Blueprint"
+  ],
+  "url": "https://apps.apple.com/us/app/menstruation-nation/id1621201647",
+  "githubUrl": "https://github.com/uoftblueprint/the-period-purse-ios",
+  "techStack": [
+    "React Native"
+  ]
+}

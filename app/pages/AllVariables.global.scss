@@ -8,6 +8,7 @@ $social-icon-color: #a8b2d1;
 $sidebar-distance: 40px;
 
 
+
 .highlightColor {
   color: $brand-primary;
 }
@@ -41,6 +42,14 @@ a.highlightColor {
   height: 30vh;
   width: 1px;
   background-color: $social-icon-color;
+}
+
+@mixin iconWithColor {
+
+  color: $social-icon-color;
+  &:hover {
+    color: $brand-primary;
+  }
 }
 
 

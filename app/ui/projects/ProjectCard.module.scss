@@ -1,0 +1,28 @@
+@use "app/pages/AllVariables.global" as global;
+
+
+.projectContainer {
+  background-color: global.$light-background-color;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  min-height: 400px;
+
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+  &:hover h1{
+    color: global.$brand-primary;
+  }
+}
+
+.interactableIcon {
+  @include global.iconWithColor;
+}
+
+.uninteractableIcon {
+  color: global.$brand-primary;
+}

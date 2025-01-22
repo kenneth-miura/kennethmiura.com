@@ -1,0 +1,14 @@
+{
+  "title": "Toronto Early Cognition Lab",
+  "description": [
+    "Tool for anonymizing children in videos so that researchers can publish videos from their studies safely. I led a team of eight on this, and also built the frontend and backend of the home page, which handles filtering and searching for videos"
+  ],
+  "githubUrl": "https://github.com/csc301-fall-2022/FaceBlur",
+  "techStack": [
+    "React",
+    "Node.js",
+    "Express",
+    "TypeScript",
+    "PostgresSQL"
+  ]
+}

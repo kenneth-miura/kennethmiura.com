@@ -1,0 +1,13 @@
+{
+  "title": "Toronto Fitness Club Website",
+  "description": [
+    "As part of my web development class, I built out a website for a fictional Toronto-based fitness club. I specifically worked on the search component, and implementing a RESTful API for course search, enrollment and subscription modification."
+  ],
+  "githubUrl": "https://github.com/kenneth-miura/csc309-pf",
+  "techStack": [
+    "React",
+    "Javascript",
+    "Django",
+    "SqLite"
+  ]
+}

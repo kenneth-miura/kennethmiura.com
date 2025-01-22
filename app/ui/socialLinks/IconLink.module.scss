@@ -1,10 +1,9 @@
 @use "../../pages/AllVariables.global" as global;
 
 .socialIcon {
-  color: global.$social-icon-color;
+  @include global.iconWithColor;
   transition: transform 0.4s ease;
   &:hover {
-    color: global.$brand-primary;
     transform: translateY(-5px);
   }
 }
