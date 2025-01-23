@@ -25,7 +25,7 @@ export default function Home() {
     return (
         <>
             <DynamicHeaderWithNoSSR menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
-            <div className={clsx("px-5 lg:px-72 py- transition-all flex flex-col items-center", {
+            <div className={clsx("px-5 lg:px-72  transition-all flex flex-col items-center", {
                 ['blur md:blur-none pointer-events-none md:pointer-events-auto ']: menuOpen
             })}
             >
@@ -39,7 +39,6 @@ export default function Home() {
                 <Footer/>
                 <VerticalSocialLinks/>
                 <EmailLink/>
-
             </div>
         </>
     );

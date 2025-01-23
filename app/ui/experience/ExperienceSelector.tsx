@@ -46,22 +46,22 @@ export default function ExperienceSelector() {
     }, [selectedJobIndex])
 
     return <div className={clsx(["flex flex-col md:flex-row", styles.container])}>
-        <div className="flex-row md:flex-col flex mr-10">
-            {
-                sortedJobs.map((job, i) =>
-                    <button key={job.company}
-                            className={clsx([styles.companyButton, firaCode.className ], {
-                                [styles.selected]: i === selectedJobIndex,
-                                }
-                            )}
-                            onClick={() => setSelectedJobIndex(i)}>{job.company}</button>
-                )
-            }
+        <div className="flex-row md:flex-col flex mr-0 md:mr-10">
+                {
+                    sortedJobs.map((job, i) =>
+                        <button key={job.company}
+                                className={clsx([styles.companyButton, firaCode.className], {
+                                        [styles.selected]: i === selectedJobIndex,
+                                    }
+                                )}
+                                onClick={() => setSelectedJobIndex(i)}>{job.company}</button>
+                    )
+                }
+            </div>
+            <div className={clsx(styles.selectedBar)} style={selectedStyle}/>
+            {jobDescription}
+
+
         </div>
-        <div className={clsx(styles.selectedBar)} style={selectedStyle}/>
-        {jobDescription}
 
-
-    </div>
-
-}
+        }

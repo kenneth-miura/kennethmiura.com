@@ -15,7 +15,7 @@ export default function SectionHeader(props: SectionHeaderProps) {
     return (
         <div className="flex items-center">
             <h2 id={scrollableId} className={clsx([styles.number, firaCode.className, 'mr-1  sm:text-lg md:text-xl'])}>{number}</h2>
-            <h2 className="sm:text-xl md:text-2xl font-bold">{sectionTitle}</h2>
+            <h2 className="text-xl md:text-2xl font-bold">{sectionTitle}</h2>
             <div className={styles.horizontalLine}/>
         </div>
     )

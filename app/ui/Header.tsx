@@ -15,9 +15,9 @@ export default function Header(props: HeaderProps) {
     const scrollDirection = useScrollDirection();
 
     return (
-        <header className={clsx(styles.header, {
-            [styles.headerScrollingDown]: !isNearTop && scrollDirection === 'down',
-            [styles.headerScrollingUp]: !isNearTop && scrollDirection === 'up',
+        <header className={clsx([styles.header], {
+            [styles.headerScrollingDown]: !isNearTop && !menuOpen && scrollDirection === 'down',
+            [styles.headerScrollingUp]: !isNearTop && !menuOpen && scrollDirection === 'up',
             [styles.headerAtTop]: isNearTop,
 
         })}>
