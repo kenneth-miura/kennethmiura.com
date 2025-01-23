@@ -11,10 +11,13 @@ export default function NavigationSidebar() {
         <ol className="flex flex-col items-center justify-center flex-grow">
             {
                 Object.values(sectionsToMetadata).map((sectionMetadata, i) => (
-                    <NavigationItem key={sectionMetadata.sectionTitle} sectionMetadata={sectionMetadata} orientation={'vertical'} index={i}/>)
+                    <NavigationItem key={sectionMetadata.sectionTitle} sectionMetadata={sectionMetadata}
+                                    orientation={'vertical'} index={i}/>)
                 )
             }
-            <LinkButton targetUrl={"/resume.pdf"} text="Resume" size='large'/>
+            <div className='mt-5'>
+                <LinkButton targetUrl={"/resume.pdf"} text="Resume" size='large'/>
+            </div>
         </ol>
 
 

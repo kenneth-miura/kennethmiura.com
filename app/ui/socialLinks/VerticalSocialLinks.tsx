@@ -8,7 +8,7 @@ export default function VerticalSocialLinks() {
     return (
         <div className={clsx(['hidden md:flex', styles.leftSidebarContainer])}>
             <IconLink href={"https://github.com/kenneth-miura"} icon={faGithub} className='mb-5' />
-            <IconLink href={"https://www.linkedin.com/feed/"} icon={faLinkedin} className='mb-5'/>
+            <IconLink href={"https://www.linkedin.com/in/kenneth-miura/"} icon={faLinkedin} className='mb-5'/>
             <div className={clsx(['hidden md:block', styles.sidebarVerticalLine])}/>
         </div>
     )

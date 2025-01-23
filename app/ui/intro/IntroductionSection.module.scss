@@ -2,11 +2,22 @@
 
 $vertical-margin: 20px;
 
-.heading {
-  margin-top: $vertical-margin;
-  margin-bottom: $vertical-margin;
+@mixin bigText {
   font-weight: 600;
   line-height: 1.1;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.heading {
+  @include bigText;
+  margin-top: $vertical-margin;
+  margin-bottom: $vertical-margin;
   color: global.$main-text;
-  font-size: clamp(40px, 8vw, 70px);
+}
+
+.subtitle {
+  @include bigText;
+  color: global.$background-text;
+  margin-bottom: $vertical-margin;
+
 }

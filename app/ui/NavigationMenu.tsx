@@ -19,13 +19,13 @@ export default function NavigationMenu(props: NavigationMenuProps) {
 
 
     const desktop = (
-        <ol className="flex flex-row items-center">
+        <ol className="flex flex-row items-center mr-10">
             {
                 Object.values(sectionsToMetadata).map((sectionMetadata, i) => (
                     <NavigationItem key={sectionMetadata.sectionTitle} sectionMetadata={sectionMetadata} orientation={'horizontal'} index={i}/>)
                 )
             }
-            <LinkButton targetUrl={"/resume.pdf"} text="Resume"/>
+            <LinkButton targetUrl={"/resume.pdf"} text="Resume" />
         </ol>
 
     );

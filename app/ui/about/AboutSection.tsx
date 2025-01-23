@@ -18,7 +18,7 @@ export default function AboutSection(props: SharedSectionProps) {
                         programming for FIRST robotics in highschool. After getting my start, I went to University of
                         Toronto to study Computer Science, and I&#39;ve since moved into fullstack work.</p>
                     <br/>
-                    <p> I&#39;ve worked at a wide spread of organizations, from a <a className={styles.highlightColor} href="https://wanderlog.com/">startup</a>, to <a
+                    <p> I&#39;ve worked at a lot of great places, from a <a className={styles.highlightColor} href="https://wanderlog.com/">travel startup</a>, to <a
                         className={styles.highlightColor} href="https://www.palantir.com/">big tech</a>, to <a
                         className={styles.highlightColor}
                         href="https://thewaltdisneycompany.com/">a

@@ -7,7 +7,7 @@ $scrolling-navbar-height: 70px;
   width: 100%;
   display: flex;
   justify-content: end;
-  padding-top: 16px;
+  padding-top: 32px;
   padding-bottom: 16px;
   padding-right: 32px;
   z-index: 1;
@@ -16,7 +16,7 @@ $scrolling-navbar-height: 70px;
 @mixin scrollingHeader {
   height: $scrolling-navbar-height;
   backdrop-filter: blur(10px);
-  box-shadow: 0px 10px 30px -15px rgba(2,12,27,0.7);
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
   background-color: rgba(10, 25, 47, 0.85);
 }
 

@@ -2,12 +2,16 @@
 
 
 .link {
-  &:hover {
+  &:hover .navTitle{
     color: global.$brand-primary;
   }
 }
 
 .number {
   color: global.$brand-primary;
+}
+
+.navTitle {
+    color: global.$main-text;
 }
 

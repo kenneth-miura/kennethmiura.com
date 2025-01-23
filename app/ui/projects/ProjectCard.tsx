@@ -8,11 +8,11 @@ import styles from './ProjectCard.module.scss';
 import {clsx} from "clsx";
 import {firaCode} from "@/app/ui/fonts";
 
-interface FeaturedProjectProps {
+interface ProjectCardProps {
     project: Omit<Project, 'altImageText' | 'imagePath'>;
 }
 
-export default function ProjectCard(props: FeaturedProjectProps) {
+export default function ProjectCard(props: ProjectCardProps) {
     const {project} = props;
     const {url, githubUrl, title, description, techStack} = project;
     const iconSize = 'xl';
@@ -22,10 +22,10 @@ export default function ProjectCard(props: FeaturedProjectProps) {
             <div className='flex items-center w-full justify-between '>
                 <FontAwesomeIcon icon={faFolder} size={'3x'} className={styles.uninteractableIcon}/>
                 <div>
-                    <a href={url}>
+                    {url && <a href={url}>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size={iconSize}
                                          className={clsx([styles.interactableIcon, 'mr-3'])}/>
-                    </a>
+                    </a>}
                     <a href={githubUrl}>
                         <FontAwesomeIcon icon={faGithub} size={iconSize} className={styles.interactableIcon}/>
                     </a>

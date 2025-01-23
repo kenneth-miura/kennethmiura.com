@@ -12,7 +12,7 @@ export default function Footer() {
         </span>
         <div className=" flex flex-row md:hidden -mr-6 mt-5 justify-center">
             <IconLink href={"https://github.com/kenneth-miura"} icon={faGithub} className='mr-6'/>
-            <IconLink href={"https://www.linkedin.com/feed/"} icon={faLinkedin} className='mr-6'/>
+            <IconLink href={"https://www.linkedin.com/in/kenneth-miura/"} icon={faLinkedin} className='mr-6'/>
         </div>
         </footer>
     )

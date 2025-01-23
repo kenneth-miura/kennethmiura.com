@@ -12,8 +12,9 @@ export default function LinkButton(props: LinkButtonProps) {
     const size = props.size ?? 'default';
     return (
             <a
-                className={clsx([styles.linkButton, firaCode.className, "text-xs"], {
+                className={clsx([styles.linkButton, firaCode.className], {
                     [styles.largeSize]: size === 'large',
+                    ['text-xl']: size === 'large',
                     [styles.defaultSize]: size === 'default',
                 })}
                 href={targetUrl}

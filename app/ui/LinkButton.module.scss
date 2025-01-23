@@ -7,7 +7,7 @@ $translation: 3px;
 }
 
 .largeSize {
-  padding: 13px 45px;
+  padding: 20px 80px;
 }
 
 
@@ -19,7 +19,6 @@ $translation: 3px;
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   cursor: pointer;
   display: inline-block;
-  background-color: global.$background-color;
   max-width: max-content;
 
   &:hover {

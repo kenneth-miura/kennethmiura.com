@@ -5,7 +5,7 @@ $selected-color: global.$brand-primary;
 $border-thickness: 2px;
 
 // Keep in sync with corresponding variables in ExperienceSelector.tsx
-$desktop-button-height: 75px;
+$desktop-button-height: 50px;
 $mobile-button-width: 125px;
 $mobile-button-height: 50px;
 
@@ -17,6 +17,7 @@ $mobile-button-height: 50px;
 .companyDescriptionContainer {
   // This so the description approximately lines up with the top word. Defined empirically
   margin-top: calc($desktop-button-height / 4);
+  max-width: 700px;
 }
 
 .selected {

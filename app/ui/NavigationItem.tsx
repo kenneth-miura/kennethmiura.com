@@ -16,14 +16,17 @@ export default function NavigationItem(props: NavigationItemProps) {
     const {navMenuTitle, scrollableId} = sectionMetadata;
     const number = `0${index + 1}.`
 
-    const listElementStyles = React.useMemo(() => orientation == 'vertical' ?"mb-4 text-lg" : "mr-4 text-sm"  , [orientation]);
-    const linkStyles = React.useMemo(() => orientation == 'vertical' ? "flex flex-col items-center text-base" : "", [orientation]);
-    const numberStyles = React.useMemo(() => orientation == 'vertical' ? "mb-1" : "mr-1", [orientation]);
+    const listElementStyles = React.useMemo(() => orientation === 'vertical' ? "mb-5 text-lg" : "mr-7 text-sm", [orientation]);
+    const linkStyles = React.useMemo(() => orientation === 'vertical' ? "flex flex-col items-center text-base" : "", [orientation]);
+    const numberStyles = React.useMemo(() => orientation === 'vertical' ? "mb-3" : "mr-2", [orientation]);
+
+    const fontSizeClassName = React.useMemo(() => orientation === 'vertical' ? 'text-xl' : 'text-lg', [orientation]);
     return (
         <li className={clsx([styles.link, listElementStyles])}>
-            <Link href={'#' + scrollableId } className={linkStyles}>
-                <span className={clsx([styles.number, firaCode.className, numberStyles])}>{number}</span>
-                <span>{navMenuTitle}</span>
+            <Link href={'#' + scrollableId} className={linkStyles}>
+                <span
+                    className={clsx([styles.number, firaCode.className, numberStyles, fontSizeClassName])}>{number}</span>
+                <span className={clsx([styles.navTitle, fontSizeClassName])}>{navMenuTitle}</span>
             </Link>
         </li>
     )

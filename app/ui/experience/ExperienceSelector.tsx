@@ -24,7 +24,7 @@ export default function ExperienceSelector() {
     const selectedStyle = React.useMemo(() => {
         // Keep in sync with corresponding variables in ExperienceSelector.module.scss
         const mobileButtonWidth = 125;
-        const desktopButtonHeight = 75;
+        const desktopButtonHeight = 50;
         return isDesktop ? {top: `${selectedJobIndex * desktopButtonHeight}px`} : {left: `${selectedJobIndex * mobileButtonWidth}px`};
     }, [isDesktop, selectedJobIndex])
 
@@ -38,7 +38,7 @@ export default function ExperienceSelector() {
             <ul className='-mb-3'>
                 {
                     experienceBullets.map(bullet => <li key={bullet}
-                                                        className={clsx([styles.bullet, 'mb-3'])}>{bullet}</li>)}
+                                                        className={clsx([styles.bullet, 'mb-3 text-lg'])}>{bullet}</li>)}
             </ul>
 
         </div>);
@@ -50,7 +50,7 @@ export default function ExperienceSelector() {
             {
                 sortedJobs.map((job, i) =>
                     <button key={job.company}
-                            className={clsx([styles.companyButton, firaCode.className, "text-lg"], {
+                            className={clsx([styles.companyButton, firaCode.className ], {
                                 [styles.selected]: i === selectedJobIndex,
                                 }
                             )}
