@@ -22,6 +22,8 @@ export default function Home() {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenuOpen = () => setMenuOpen((prevMenuOpen) => !prevMenuOpen);
 
+    throw new Error("This is an error!");
+
     return (
         <>
             <DynamicHeaderWithNoSSR menuOpen={menuOpen} toggleMenuOpen={toggleMenuOpen}/>
