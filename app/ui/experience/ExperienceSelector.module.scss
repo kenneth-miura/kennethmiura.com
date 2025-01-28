@@ -26,7 +26,8 @@ $mobile-button-height: 50px;
 
 .container {
   position: relative;
-  min-height: 500px;
+  /* We set this so that the container doesn't increase in size, since that looks like a "scroll-up" event and opens the header. */
+  min-height: 650px;
 }
 
 

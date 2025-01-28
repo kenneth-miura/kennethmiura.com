@@ -14,8 +14,8 @@ export default function AboutSection(props: SharedSectionProps) {
             <div className="mr-5 max-w-xl">
                 <SectionHeader section={'about'} index={index}/>
                 <div className='mt-5 text-xl'>
-                    <p> Hi! My name is Kenneth, and I like building software! I got started with software by doing
-                        programming for FIRST robotics in highschool. After getting my start, I went to University of
+                    <p> Hi! My name is Kenneth, and I like building software! I got started by doing
+                        programming for FIRST Robotics in high school. After getting my start, I went to the University of
                         Toronto to study Computer Science, and I&#39;ve since moved into fullstack work.</p>
                     <br/>
                     <p> I&#39;ve worked at a lot of great places, from a <a className={styles.highlightColor} href="https://wanderlog.com/">travel startup</a>, to <a
@@ -30,7 +30,7 @@ export default function AboutSection(props: SharedSectionProps) {
                             menstruation equity non-profit</a>. Beyond
                         that, I was also involved with
                         overhauling the website at <a className={styles.highlightColor}
-                                                      href="https://www.yourenext.ca/">a career fair club</a></p>
+                                                      href="https://www.yourenext.ca/">a career fair club</a>.</p>
                     <br/>
                     <p>Here&#39;s some technologies I like:</p>
                     <br/>
