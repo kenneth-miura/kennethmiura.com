@@ -1,14 +1,12 @@
 import type {Metadata} from "next";
+import {config} from '@fortawesome/fontawesome-svg-core';
 import "./globals.scss";
 import {inter, firaCode} from "@/app/ui/fonts";
-
-import {config} from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 config.autoAddCss = false;
-
-// TODO: fill this in
-const url = "https://kennethmiura.ca";
+const url = "https://kennethmiura.tech";
 const description = "Kenneth Miura is a Computer Science Student specializing in Full Stack Development";
 
 
@@ -28,11 +26,17 @@ export const metadata: Metadata = {
     }
 };
 
+
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const gtag = process.env['GOOGLE_ANALYTICS_TAG'];
+    if(!gtag) {
+        console.error("GOOGLE_ANALYTICS_TAG is not set in the environment variables");
+    }
+
     return (
         <html lang="en" className="scroll-smooth">
         <body
@@ -40,6 +44,7 @@ export default function RootLayout({
         >
         {children}
         </body>
+        {gtag && <GoogleAnalytics gaId={gtag}/>}
         </html>
     );
 }

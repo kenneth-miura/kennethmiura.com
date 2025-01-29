@@ -5,7 +5,6 @@ import NavigationSidebar from "@/app/ui/NavigationSidebar";
 import {sectionsToMetadata} from "@/app/ui/sections";
 import NavigationItem from "@/app/ui/NavigationItem";
 
-// TODO: if this setOpen stuff feels universally needed, alter to a universal provider
 export interface NavigationMenuProps {
     menuOpen: boolean;
     toggleMenuOpen: () => void;
