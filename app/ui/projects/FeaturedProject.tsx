@@ -30,7 +30,7 @@ export default function FeaturedProject(props: FeaturedProjectProps) {
                 <TextWithLinks linkableTexts={description}/>
             </div>
             <div className="flex">
-                <IconLink href={githubUrl} icon={faGithub}/>
+                {githubUrl && <IconLink href={githubUrl} icon={faGithub}/>}
                 {url && <IconLink href={url} icon={faArrowUpRightFromSquare}/>}
             </div>
             <div className={'flex justify-end'}>{techStack.map(technology => <div key={technology}

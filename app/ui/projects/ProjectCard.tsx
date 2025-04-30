@@ -26,9 +26,9 @@ export default function ProjectCard(props: ProjectCardProps) {
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} size={iconSize}
                                          className={clsx([styles.interactableIcon, 'mr-3'])}/>
                     </a>}
-                    <a href={githubUrl}>
+                    {githubUrl && <a href={githubUrl}>
                         <FontAwesomeIcon icon={faGithub} size={iconSize} className={styles.interactableIcon}/>
-                    </a>
+                    </a>}
                 </div>
             </div>
             <h1 className='text-2xl font-bold mt-2'>{title}</h1>
@@ -36,7 +36,7 @@ export default function ProjectCard(props: ProjectCardProps) {
         </div>
         <div className='mt-4'>
             <div className={'flex flex-wrap'}>{techStack.map(technology => <span key={technology}
-                                                                                 className={clsx([firaCode.className, 'text-sm mr-2'])}> {technology}</span>)}</div>
+                                                                                 className={clsx([firaCode.className, 'text-sm mr-4'])}> {technology}</span>)}</div>
         </div>
     </div>)
 

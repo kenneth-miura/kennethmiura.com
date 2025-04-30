@@ -1,0 +1,11 @@
+{
+  "title": "Budget Tracker",
+  "description": [
+    "Budget tracking app that categorizes credit card expenses from a statement"
+  ],
+  "techStack": [
+    "Next.js",
+    "Tailwind CSS",
+    "React"
+  ]
+}
