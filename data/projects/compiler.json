@@ -1,0 +1,7 @@
+{
+  "title": "MiniC Compiler",
+  "description": [
+    "Developed a compiler for MiniC, which is a subset of C. As part of this, I defined the language grammar, wrote an AST tree builder, semantic checker, and generated LLVM IR. I also implemented the mem2reg optimization pass, outperforming 60% of my class."
+  ],
+  "techStack": [ "LLVM IR"]
+}
